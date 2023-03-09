@@ -1,0 +1,19 @@
+Preparando o Banco de Dados:
+
+Ferramenta: XAMPP
+1 - abrir o XAMPP;
+2 - Deixar online as opções MySQL e Apache;
+3 - Acessar o phpMyAdmin (clicando no botao admin na linha MySQL);
+4 - Ir na aba SQL e criar o Banco de Dados e a tabela produto:
+
+  create database mercadinho;
+  use mercadinho;
+
+ create table produto (
+ id in primary key AUTO_INCREMENT,
+ nome varchar(255),
+ valor int,
+ qtd int
+ );
+ 
+ 
