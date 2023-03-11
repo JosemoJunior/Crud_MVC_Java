@@ -24,16 +24,30 @@ public class Produto {
             this.nome = nome;
             this.valor = valor;
             this.quantidade = quantidade;
-		
 	}
         
+        public Produto(String nome, int valor, int quantidade, Fornecedor fornecedor) {
+            this.nome = nome;
+            this.valor = valor;
+            this.quantidade = quantidade;
+            this.fornecedor = fornecedor;
+	}
         
-	
-	public Produto(int id, String nome, int valor, int quantidade) {
+        public Produto(int id, String nome, int valor, int quantidade) {
 		this.id = id;
 		this.nome = nome;
 		this.valor = valor;
 		this.quantidade = quantidade;
+	}
+        
+        
+	
+	public Produto(int id, String nome, int valor, int quantidade, Fornecedor fornecedor) {
+		this.id = id;
+		this.nome = nome;
+		this.valor = valor;
+		this.quantidade = quantidade;
+                this.fornecedor = fornecedor;
 	}
 	public int getId() {
 		return id;

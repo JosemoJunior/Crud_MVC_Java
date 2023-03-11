@@ -16,6 +16,11 @@ public class Fornecedor {
     public Fornecedor () {
         
     }
+    
+    public Fornecedor(String nome, String cnpj) {
+        this.nome = nome;
+        this.cnpj = cnpj;
+    }
 
     public Fornecedor(String nome, String cnpj, int idFornecedor) {
         this.nome = nome;
