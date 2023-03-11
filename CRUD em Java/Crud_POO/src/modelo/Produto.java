@@ -14,6 +14,7 @@ public class Produto {
 	private String nome;
 	private int valor;
 	private int quantidade;
+        private Fornecedor fornecedor;
 	
 	public Produto() {
 		
@@ -58,6 +59,21 @@ public class Produto {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
+
+    public Fornecedor getFornecedor() {
+        return fornecedor;
+    }
+
+    public void setFornecedor(Fornecedor fornecedor) {
+        this.fornecedor = fornecedor;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{" + "id=" + id + ", nome=" + nome + ", valor=" + valor + ", quantidade=" + quantidade + ", fornecedor=" + fornecedor + '}';
+    }
+        
+        
 
 }
 
