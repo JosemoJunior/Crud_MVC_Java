@@ -57,7 +57,7 @@ public class Exibir extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "Id", "Nome", "Valor", "Quantidade"
+                "Id", "Nome", "Valor", "Quantidade", "Fornecedor"
             }
         ));
         jScrollPane1.setViewportView(tabela);
@@ -125,7 +125,8 @@ public class Exibir extends javax.swing.JInternalFrame {
                 p.getId(), 
                 p.getNome(),
                 p.getValor(), 
-                p.getQuantidade()
+                p.getQuantidade(),
+                p.getFornecedor()  
             };
             modelo.addRow(dados);
         }
